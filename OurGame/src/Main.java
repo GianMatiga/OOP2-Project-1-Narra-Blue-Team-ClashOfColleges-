@@ -48,8 +48,8 @@ public class Main {
                     break;
 
                 case "2":
-                    AdventureMode adventure = new AdventureMode();
-                    adventure.startAdventure();
+
+                    Adventure.startAdventure();
                     break;
 
                 case "3":
