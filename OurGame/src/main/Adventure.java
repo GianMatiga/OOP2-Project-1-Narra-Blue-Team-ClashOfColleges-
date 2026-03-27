@@ -286,7 +286,7 @@ public class Adventure {
         System.out.println("                                                                            │  0. Exit                                                                 │");
         System.out.println("                                                                            └──────────────────────────────────────────────────────────────────────────┘");
 
-        System.out.print("                                                                               Select Character (1–11): ");
+        System.out.print("                                                                               Select Character (0–11): ");
 
     }
     public static void displayWorlds() {
