@@ -77,16 +77,24 @@ public class PVPBattleSystem {
     }
 
     private static Character chooseCharacter(int playerNum) {
-        System.out.println("\n\n                                                                            ╔══════════════════════════════════════════════════════════════════════════╗");
-        System.out.println("                                                                            ║                      PLAYER " + playerNum + ": CHOOSE YOUR CHARACTER                     ║");
+        System.out.println("\n\n");
+        System.out.println("                                                                            ╔══════════════════════════════════════════════════════════════════════════╗");
+        System.out.println("                                                                            ║                           CHOOSE YOUR CHARACTER                          ║");
         System.out.println("                                                                            ╚══════════════════════════════════════════════════════════════════════════╝");
+
         System.out.println("                                                                            ┌──────────────────────────────────────────────────────────────────────────┐");
-        System.out.println("                                                                            │  CCS:  1. Ton  2. Jay  | CMBA: 3. Josh  4. Patricia | CCJ:  5. Kal-Khent │");
-        System.out.println("                                                                            │  CNAHS: 6. Lanz 7. Ashley | CEA:  8. Sir G 9. Ian | CASE: 10. Jon 11. Coleen │");
+        System.out.println("                                                                            │  COLLEGE      │ AVAILABLE CHARACTERS                                     │");
         System.out.println("                                                                            ├──────────────────────────────────────────────────────────────────────────┤");
-        System.out.println("                                                                            │                 [0] BACK TO MAIN MENU                                    │");
+        System.out.println("                                                                            │  CCS          │  1. Ton         2. Jay                                   │");
+        System.out.println("                                                                            │  CMBA         │  3. Josh        4. Patricia                              │");
+        System.out.println("                                                                            │  CCJ          │  5. Kal-Khent                                            │");
+        System.out.println("                                                                            │  CNAHS        │  6. Lanz        7. Ashley                                │");
+        System.out.println("                                                                            │  CEA          │  8. Sir G       9. Ian                                   │");
+        System.out.println("                                                                            │  CASE         │ 10. Jon        11. Coleen                                │");
+        System.out.println("                                                                            ├──────────────────────────────────────────────────────────────────────────┤");
+        System.out.println("                                                                            │  0. Exit                                                                 │");
         System.out.println("                                                                            └──────────────────────────────────────────────────────────────────────────┘");
-        System.out.print("                                                                                Player " + playerNum + " Select (0–11): ");
+        System.out.print("                                                                                Select Character (0–11): ");
 
         int choice = getValidInput(0, 11);
         return switch (choice) {
