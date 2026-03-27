@@ -1,6 +1,8 @@
-package Entity;
+package main;
 
-import main.*;
+import Entity.*;
+import Entity.Character;
+
 import java.util.*;
 
 public class CharacterInfo {
@@ -8,12 +10,12 @@ public class CharacterInfo {
     private static Scanner scan = new Scanner(System.in);
 
     public static void showInfo() {
-        Character info = chooseCharacter();
+        Entity.Character info = chooseCharacter();
         displayCharacterInfo(info);
         chooseAgain();
     }
 
-    private static Character chooseCharacter() {
+    private static Entity.Character chooseCharacter() {
         System.out.println("\n\n");
         System.out.println("                                                                            ╔══════════════════════════════════════════════════════════════════════════╗");
         System.out.println("                                                                            ║                            CHOOSE A CHARACTER                            ║");
@@ -76,7 +78,7 @@ public class CharacterInfo {
                 String choice = scan.nextLine().trim().toLowerCase();
 
                 if (choice.equals("y")) {
-                    Character next = chooseCharacter();
+                    Entity.Character next = chooseCharacter();
                     displayCharacterInfo(next);
                 } else if (choice.equals("n")){
                     System.out.println("\n                                          Returning to main menu...");

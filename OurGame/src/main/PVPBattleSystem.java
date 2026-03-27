@@ -10,12 +10,12 @@ public class PVPBattleSystem {
 
     public static void startPVP() {
         // Player 1 Selection
-        System.out.println("\n                                                                                --- PLAYER 1 SELECTION ---");
+        System.out.println("\n                                                                                     --- PLAYER 1 SELECTION ---");
         Character p1 = chooseCharacter(1);
         if (p1 == null) return;
 
         // Player 2 Selection
-        System.out.println("\n                                                                                --- PLAYER 2 SELECTION ---");
+        System.out.println("\n                                                                                     --- PLAYER 2 SELECTION ---");
         Character p2 = chooseCharacter(2);
         if (p2 == null) return;
 

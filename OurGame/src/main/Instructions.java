@@ -1,5 +1,4 @@
-package Entity;
-import main.*;
+package main;
 import java.util.Scanner;
 
 public class Instructions {

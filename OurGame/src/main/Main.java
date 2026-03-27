@@ -1,6 +1,5 @@
 package main;
 
-import Entity.*;
 import java.util.Scanner;
 
 public class Main {
