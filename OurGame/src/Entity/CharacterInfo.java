@@ -48,6 +48,7 @@ public class CharacterInfo {
             case 10 -> new Jon();
             case 11 -> new Coleen();
             case 0 -> {
+                System.out.print("                                                                                Returning to main menu...");
                 Main.main(null);
                 yield null;
             }
