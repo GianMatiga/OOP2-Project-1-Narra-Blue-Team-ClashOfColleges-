@@ -1,18 +1,8 @@
-package core;
-import java.util.*;
+package main;
+import Entity.*;
+import Entity.Character;
 
-import entity.hero.Ashley;
-import entity.hero.Character;
-import entity.hero.Coleen;
-import entity.hero.Ian;
-import entity.hero.Jay;
-import entity.hero.Jon;
-import entity.hero.Josh;
-import entity.hero.KalKhent;
-import entity.hero.Lanz;
-import entity.hero.Patricia;
-import entity.hero.SirG;
-import entity.hero.Ton;
+import java.util.*;
 
 public class PVPBattleSystem {
 
@@ -57,7 +47,7 @@ public class PVPBattleSystem {
             if (!p2.isAlive()) {
                 battleLog.add("💀 " + p2.getName() + " was defeated!");
                 displayBattleLog(battleLog, round);
-                break; 
+                break;
             }
 
             // === Player 2 Turn ===
