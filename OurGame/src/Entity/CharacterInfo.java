@@ -62,9 +62,9 @@ public class CharacterInfo {
             try {
                 int input = Integer.parseInt(scan.nextLine().trim());
                 if (input >= 0 && input <= 11) return input;
-                System.out.print("\n                                                                                Invalid choice. Enter (1–11): ");
+                System.out.print("\n                                                                                Invalid choice. Enter (0–11): ");
             } catch (Exception e) {
-                System.out.print("\n                                                                                Please enter a number (1–11): ");
+                System.out.print("\n                                                                                Please enter a number (0–11): ");
             }
         }
     }

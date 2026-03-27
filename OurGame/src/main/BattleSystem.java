@@ -146,9 +146,10 @@ public class BattleSystem {
         System.out.println("                                                                            │  CNAHS        │  6. Lanz        7. Ashley                                │");
         System.out.println("                                                                            │  CEA          │  8. Sir G       9. Ian                                   │");
         System.out.println("                                                                            │  CASE         │ 10. Jon        11. Coleen                                │");
+        System.out.println("                                                                            ├──────────────────────────────────────────────────────────────────────────┤");
+        System.out.println("                                                                            │  0. Exit                                                                 │");
         System.out.println("                                                                            └──────────────────────────────────────────────────────────────────────────┘");
-
-        System.out.print("                                                                                Select Character (1–11): ");
+        System.out.print("                                                                                Select Character (0–11): ");
 
 
         int choice = getValidCharacterInput();
@@ -165,6 +166,11 @@ public class BattleSystem {
             case 9 -> new Ian();
             case 10 -> new Jon();
             case 11 -> new Coleen();
+            case 0 -> {
+                System.out.print("                                                                                Returning to main menu...");
+                Main.main(null);
+                yield null;
+            }
             default -> new Ton();
         };
     }
@@ -197,10 +203,10 @@ public class BattleSystem {
         while (true) {
             try {
                 int input = Integer.parseInt(scan.nextLine().trim());
-                if (input >= 1 && input <= 11) return input;
-                System.out.print("\n                                                                                ❌ Invalid choice! Please enter a number (1-11): ");
+                if (input >= 0 && input <= 11) return input;
+                System.out.print("\n                                                                                ❌ Invalid choice! Please enter a number (0-11): ");
             } catch (Exception e) {
-                System.out.print("\n                                                                                Please enter a number (1–11): ");
+                System.out.print("\n                                                                                Please enter a number (0–11): ");
             }
         }
     }
